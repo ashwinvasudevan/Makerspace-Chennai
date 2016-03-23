@@ -15,6 +15,11 @@ For [meetups](http://www.meetup.com/Makerspacech/)
 
 ![enter image description here](http://i.imgur.com/ATEWiJr.jpg)
 
+![enter image description here](http://i.imgur.com/nEKm8Zh.jpg)
+
+![enter image description here](http://i.imgur.com/zc3xvLG.png)
+
+
 
 
 
