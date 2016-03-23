@@ -1,0 +1,380 @@
+/* font Imports */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+
+
+/* Global Styles */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+ h1 {
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+   font-family: 'Raleway', sans-serif;
+}
+
+i {
+  padding-right:0.4em;
+}
+
+
+/* Side Menu */
+
+#sidebar-wrapper {
+  margin-right: -250px;
+  right: 0;
+  width: 250px;
+  background: #000;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.sidebar-nav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebar-nav li a {
+  color: #999999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.2);
+  text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+#menu-toggle {
+  top: 0;
+  left: 4px;
+  position: fixed;
+  z-index: 1;
+  background-color:#373737 !important;
+  border-color:#373737 !important;
+  border-radius:0px !important;
+}
+
+#sidebar-wrapper.active {
+  left: 0;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+#menu-close {
+  background: none;
+  border:none;
+  color:#373737;
+}
+
+
+/* Full Page Image Header Area */
+
+.header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Intro */
+
+.intro {
+  padding: 50px 0;
+}
+
+/* logo */
+
+#logo {
+  margin:auto;
+  margin-top:6em;
+}
+
+#social {
+  margin-top: 6em;
+  margin-bottom: 2em;
+}
+
+/* Buttons */
+
+.custom {
+  border-radius:0px !important;
+  background-color:#1ABC9C;
+  border:#1ABC9C;
+}
+
+.custom:hover {
+  background-color:#1ABC9C;
+}
+
+
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+/* Twitter */
+
+#twitter-widget ul {
+  list-style: none;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+#twitter-widget li {
+  background-color: #1ABC9C;
+  padding:1em;
+  margin-bottom: 1em;
+}
+
+
+#twitter-widget a {
+  font-size: 20px;
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+#twitter-widget p {
+  color:#e2e5e8;  
+}
+
+
+#twitter-widget img {
+ width:13%;
+  float:left;
+  margin-right:1em;
+}
+
+#twitter-widget .interact {
+  display: none;
+}
+
+
+#twitter-widget .timePosted {
+  color:#FFFFFF;
+}
+
+
+/* Form styles */
+
+
+
+/* Basic Form Styles */
+form {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+  form#search .collapse.in i { color: #444; }
+  
+form .btn {
+  float: left;
+  margin: 0 0 0 10%;
+}
+  
+.form-group {
+  width: 100%;
+  margin: 0 0 20px 0;
+}  
+  .form-group label { 
+    float: right; 
+    width: 10%;
+    margin: 0;
+  }
+    .form-group label i { 
+      font-size: 28px; 
+      line-height: 70px;
+      color:#dfdfdf;
+      
+      -webkit-transition: color .3s;
+      transition: color .3s;
+    }
+    
+  .form-group.textarea { border: 0; }
+    .form-group.textarea label { height: 200px; }
+  
+  .form-group input,
+  .form-group textarea {
+    float: right;
+    width: 87%;
+    margin-right: 3%;
+  }
+  .form-group input:focus + label i,
+  .form-group textarea:focus + label i {
+    color: #1ABC9C;
+  }
+  .form-group input.form-control:focus,
+  .form-group textarea.form-control:focus {
+    border-color: #1ABC9C;
+  }
+  .form-group input.form-control:valid,
+  .form-group textarea.form-control:valid {
+    border-color: #1ABC9C;
+  }
+
+
+input,
+textarea,
+input.form-control,
+textarea.form-control,
+input.form-control:focus,
+textarea.form-control:focus {
+  color: #444;
+  font-size: 23px;
+  height: 70px;
+  outline: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-left: 4px solid #ddd;
+  background-color: #eee;
+  padding: 0 20px;
+}
+textarea.form-control,
+textarea.form-control:focus {
+  height: 200px;
+  resize: none;
+  padding-top: 18px;
+}
+  #search input,
+  #search textarea,
+  #search input.form-control,
+  #search textarea.form-control,
+  #search input.form-control:focus,
+  #search textarea.form-control:focus {
+    color: #eee;
+    font-size: 16px;
+    background-color: #444;
+    width: 100%;
+    border: 0;
+    margin-right: 0;
+  }
+  
+label {
+  font-weight: normal;
+}
+
+.arrow-up {
+  position: relative;
+  float: right;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #444;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #777;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+  background-color:#2980B9;
+}
+
+.top-scroll {
+  margin-top: 50px;
+}
+
+.top-scroll a {
+  text-decoration: none;
+  color: inherit;
+}
+
+i.scroll {
+  color: #333333;
+}
+
+i.scroll:hover {
+  color: #0a5175;
+}
+/* Responsive */
+
+@media (max-width: 768px) {
+	
+  .header {
+	background: url(../img/bg.jpg) no-repeat center center scroll; 
+  }
+
+  .callout {
+	background: url(../img/callout.jpg) no-repeat center center scroll; 
+  }
+
+  .map {
+	height: 75%;
+  }
+
+}
+
+
+

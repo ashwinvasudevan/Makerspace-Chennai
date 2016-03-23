@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Makerspace</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+    <script src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/twitterFetcher_v10_min.js"></script>
+    
+
+</head>
+
+<body>
+
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://makerspacechennai.in">Makerspace</a>
+            </li>
+            <li><a href="http://makerspacechennai.in/blog">Blog</a>
+            </li>
+            <li><a href="#">Funnel</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /Side Menu -->
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <!-- Logo -->
+            <img src="img/bg2.png" class="img-responsive" id="logo">
+            <!--/Logo -->
+            <!-- Social Button -->
+            <div class="col-md-7 col-md-offset-3" id="social">
+                <div class="fb-like" data-href="https://www.facebook.com/makerspacechennai" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                <g:plusone size="medium" data-href="http://makerspacechennai.in" ></g:plusone>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://makerspacechennai.in.in" data-via="MakerspaceCH">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <!-- /Social Buttons -->
+            </div>
+        </div>              
+    </div>
+
+
+    
+     
+    <!-- /Full Page Image Header Area -->
+
+    <!-- Intro -->
+    <div id="about" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-md-offset-2 ">
+                    <h1>What is Makerspace Chennai?</h1>
+                    <p class="lead text-center">Makerspace Chennai is a community-operated workspace where people with common interests, often in computers, technology, science, digital art or electronic art, can meet, socialise and/or collaborate. </p>
+                </div>
+                <div class="col-md-4 col-md-offset-5 ">
+                    <a href="http://makerspacechennai.in/blog" class="btn btn-lg btn-success custom"><i class="fa fa-wrench"></i>Blog</a>
+                    <a href="#" class="btn btn-lg btn-success custom" ><i class="fa fa-stack-exchange"></i>Funnel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="twitter-widget">
+                        <script>
+                            function dateFormatter(date) {
+                            return date.toTimeString();
+                            }
+                            twitterFetcher.fetch('466572454396063745', '', 3, true, true, true, '', false, handleTweets);
+
+                            function handleTweets(tweets){
+                            var x = tweets.length;
+                            var n = 0;
+                            var element = document.getElementById('twitter-widget');
+                            var html = '<ul>';
+                            while(n < x) {
+                            html += '<li>' + tweets[n] + '</li>';
+                            n++;
+                            }
+                            html += '</ul>';
+                            element.innerHTML = html;
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form role="form" method="post" action="contact.php">
+                        <div class="form-group">
+                            <input type="text" name ="exampleInputName" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+                            <label for="exampleInputName"><i class="fa fa-tag"></i></label>
+                            <div class="clearfix"></div>
+                        </div>
+                    <div class="form-group">
+                            <input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                            <label for="exampleInputEmail1"><i class="fa fa-inbox"></i></label>
+                            <div class="clearfix"></div>
+                    </div>
+                    <div class="form-group textarea">
+                            <textarea rows="6" name="exampleInputMessage" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+                            <label for="exampleInputMessage"><i class="fa fa-pencil"></i></label>
+                            <div class="clearfix"></div>
+                    </div>
+                    <input type="submit" class="submit" id="submit" value="Submit" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+     <!-- Map -->
+    <div id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7771.193074700448!2d80.20339843098142!3d13.124726564646604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526489ca8ab27d%3A0x2e878b156dfd0045!2sVivekananda+Nagar+Main+Rd%2C+Senthil+Nagar%2C+Kolathur!5e0!3m2!1sen!2s!4v1400073614976" width="800" height="600" frameborder="0" style="border:0"></iframe>
+        <br />
+        
+        </iframe>
+    </div>
+    <!-- /Map -->
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=582491025182101&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <script src="js/bootstrap.js"></script>
+    
+    
+       
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
